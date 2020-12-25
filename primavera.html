@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primavera</title>
+    <link rel="shortcut icon" href="/img/spring.png" type="image/x-icon">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .links{
+            width: 100%;
+            height: 50px;
+            position:fixed;
+            display: flex;
+
+        }
+
+        .scroll input{
+            display: none;
+        }
+
+        .links label{
+            padding: 10px 0;
+            flex-grow: 1;
+            cursor: pointer;
+            transition: all .4s;
+            text-align: center;
+            font-family: 'Arial';
+            font-size: 100%;
+            color: #fff;
+        }
+
+        .links label:hover{
+            background-color: rgba(255,255,255,.2);
+        }
+
+        .bloco{
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        #fotos{
+            background-color: rgb(228, 54, 141);
+
+        }
+        #mec{
+            background-color: rgba(152, 98, 189, 0.904);
+            justify-content: left;
+            padding-left: 30px;
+            font-size: 24px;
+            
+        }
+        #veg{
+            background-color: rgb(158, 192, 65);
+            
+        }
+        #tempo{
+            background-color: rgb(96, 203, 236);
+            
+        }
+        #repre{
+            background-color: rgb(212, 71, 149);
+            
+        }
+
+        .scroll{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sections{
+            transition: all .4s;
+        }
+
+        #rd_fotos:checked ~ .sections{
+            margin-top: 0vh;
+        }
+        #rd_mec:checked ~ .sections{
+            margin-top: -100vh;
+        }
+        #rd_veg:checked ~ .sections{
+            margin-top: -200vh;
+        }
+        #rd_tempo:checked ~ .sections{
+            margin-top: -300vh;
+        }
+        #rd_repre:checked ~ .sections{
+            margin-top: -400vh;
+        }
+        .bloco img {
+            width: 40%;
+
+        }
+        nav label a{
+            font-size: 30px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .texto1{
+            color: #fff;
+            float: left;
+            width: 400px;
+            margin-bottom: 300px;
+            font-family: Arial;
+            border: solid 10px;
+            padding: 10px;
+            
+        }
+        .texto2{
+            color: #fff;
+            display: fixed;
+            font-family: Arial;
+            width: 400px;
+            margin-left: 100px;
+            border: solid 10px;
+            padding: 10px;
+
+        }
+        .texto3{
+            color: #fff;
+            font-family: Arial;
+            width: 400px;
+            margin: 250px 0px 0px 100px;
+            border: solid 10px;
+            padding: 10px;
+        }
+        .texto4{
+            color: white;
+            font-size: 24px;
+            font-family: Arial;
+            width: 700px;
+            margin-right:50px;
+            border: solid 5px;
+            padding: 30px;
+        }
+        .texto5{
+            color: white;
+            font-size: 24px;
+            font-family: Arial;
+            width: 700px;
+            border: solid 5px;
+            margin: 20px;
+            padding: 10px;
+        }
+
+
+       
+        
+    </style>
+</head>
+<body>
+    <nav class="links">
+        <label for="rd_fotos">Fotos</label>
+        <label for="rd_mec">Primavera </label>
+        <label for="rd_veg">Vegetação</label>
+        <label for="rd_tempo">Tempo</label>
+        <label for="rd_repre"><a href="/index.html">Click aqui pra voltar</a></label>
+    </nav>
+    <div class="scroll">
+        <input type="radio" name="grupo" id="rd_fotos" checked="true">
+        <input type="radio" name="grupo" id="rd_mec">
+        <input type="radio" name="grupo" id="rd_veg" >
+        <input type="radio" name="grupo" id="rd_tempo" >
+        
+
+        <section class="sections">
+            <section class="bloco" id="fotos">
+                <img src="/img/primavera1.jpg" alt="primavera1" style="width: 500px;">
+                <img src="/img/primavera2.jpg" alt="primavera2" style="width: 500px;">
+                <img src="/img/primavera3.jpg" alt="primavera3" style="width: 500px;">
+
+                
+            </section>
+            <section class="bloco" id="mec">
+                <div class="texto1"><p><h1>Origem Nome</h1><br> A palavra primavera deriva do latim, primo vere, que significa primeiro verão. Verão significa tempo primaveril. Assim, primavera corresponde ao período que antecede o verão.</p></div><div class="texto2"><p><h1>Dias</h1><br> A Primavera começa em dias diferentes em cada hemisferio. <br><br> No Hemisfério Sul:22 ou 23 de setembro até 21 ou 22 de dezembro. <br> <br>No Hemisfério Norte:20 ou 21 de março até 20ou 21 de junho</p></div><div class="texto3"><p><h1>Holambra</h1><br> A maior festa das flores na primavera acontece na pequena cidade de Holambra, interior de São Paulo. A cidade tem colonização Holandesa, daí o nome Holambra, mistura de Holanda com Brasil. É a maior produtora de flores de país. No mês de setembro acontece a Expoflora, uma feira de flores com muitas atrações</p></div>
+            </section>
+
+            <section class="bloco" id="veg">
+                <div class="texto4" ><strong>Estação das Flores</strong><BR></BR><p>Muitas flores desabrocham no período da primavera. Isso se deve a um conjunto de fatores, como o aumento gradativo das temperaturas (visto que a primavera representa uma transição entre o inverno e o verão), e ao o regime de chuvas, que se intensifica nesse período. Algumas espécies destacam-se nessa estação, por exemplo: <br><br>
+                <ul>
+                    <li>Girassóis</li>
+                    <li>Hortênsias</li>
+                    <li>Orquídeas</li>
+                    <li>Violeta</li>
+                    <li>Dama-da-noite</li>
+                    <li>Rosas</li>
+                </ul></p>
+            </div>
+            <img src="/img/orquidia.jpg" alt="orquidia" style="width: 300px; border: solid 5px white; padding: 30px;">
+            </section>
+
+            <section class="bloco" id="tempo">
+            <div class="texto5">
+                <p>As chuvas costumam ser frequentes nos fins de tarde ou no período noturno e intensificam-se na medida em que o verão aproxima-se. Por esse motivo também, muitas pessoas costumam dizer que durante a primavera o clima fica mais agradável.</p>
+                <br>
+                <p><strong>→ Primavera nas regiões brasileiras</strong></p><p>
+                    Segundo o Centro de Previsão de Tempo e Estudos Climáticos, nas regiões Centro-Oeste e Sudeste, os índices pluviométricos tornam-se mais intensos e também mais frequentes. Isso é considerado um marco entre a estação seca (o inverno) e a estação chuvosa (verão). Normalmente essas chuvas são acompanhadas de ventos fortes e granizo. <br><br>
+
+                    Especialmente no Centro-Oeste brasileiro, as temperaturas atingem valores muito altos, devido à intensidade da radiação solar e à ocorrência de dias de céu claro.
+                    
+                    </p>
+            </div>
+            <div class="texto5"><p>A estação seca continua na região Nordeste no período de vigência da primavera, com exceção dos estados da Bahia, do Maranhão e do Piauí. Nessa região a variação de temperatura é pouca durante o ano, e normalmente a temperatura é alta. <br><br>
+                    
+                Na região Sul, a questão da pluviosidade não muda tanto, pois o regime de chuvas sofre pouca variação, sendo, portanto, uniforme durante todo o ano. Apesar disso, quando as chuvas convectivas ocorrem, ainda que curtas, são bastante intensas. <br><br>
+                
+                A região Norte apresenta pouca variação da temperatura ao longo do ano. Durante a primavera, os índices pluviométricos aumentam gradativamente, especialmente entre outubro e novembro.</p></div>
+            </section>
+          
+        </section>
+    </div>
+</body>
+</html>
